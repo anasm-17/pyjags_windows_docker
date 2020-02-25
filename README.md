@@ -7,7 +7,7 @@ Docker container for pyjags for windows users having difficulties installing pyj
 docker pull anasm17/pyjags_windows
 ```
 
-2. Place project directories or files under the project folder and run the following command:
+2. Place project directories or files under the project folder and run the following command in the root directory of the project:
 
 **Windows:**
 ```
