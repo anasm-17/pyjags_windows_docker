@@ -22,14 +22,18 @@ RUN wget --quiet https://repo.anaconda.com/archive/Anaconda3-2019.10-Linux-x86_6
 # Set anconda path
 ENV PATH="/opt/conda/bin:${PATH}"
 
+# Expose port
 EXPOSE 8888
 
 RUN apt-get update
 
+# Install pkg-config, prerequisite for jags
 RUN apt-get install -y pkg-config
 
+# Install jags
 RUN apt-get install -y jags
 
+# Install pyjags
 RUN pip install pyjags
 
 # install other python packages
