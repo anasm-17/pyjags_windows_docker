@@ -11,11 +11,11 @@ docker pull anasm17/pyjags_windows
 
 **Windows:**
 ```
-docker run --rm -it -v ${PWD}/project:/usr/src/project/ -p 8899:8888 anasm-17/pyjags_windows
+docker run --rm -it -v ${PWD}/project:/usr/src/project/ -p 8899:8888 anasm17/pyjags_windows
 ```
 **Linux:**
 ```
-docker run --rm -it -v /$(pwd)/project:/usr/src/project/ -p 8899:8888 anasm-17/pyjags_windows
+docker run --rm -it -v /$(pwd)/project:/usr/src/project/ -p 8899:8888 anasm17/pyjags_windows
 ```
 *Note:- 8899 can be another number, just make sure it is consistent with step 5.*
 
