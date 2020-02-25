@@ -17,13 +17,16 @@ docker run --rm -it -v ${PWD}/project:/usr/src/project/ -p 8899:8888 anasm-17/py
 ```
 docker run --rm -it -v /$(pwd)/project:/usr/src/project/ -p 8899:8888 anasm-17/pyjags_windows
 ```
-*Note:-* 8899 can be another number, just make sure it is consistent with step 5.
+*Note:- 8899 can be another number, just make sure it is consistent with step 5.*
+
 3. Once it runs, run the following command:
+
 ```
 cd /usr/src/project/
 ```
 
 4. To open jupyter notebook or lab run the following:
+
 ```
 jupyter notebook --ip 0.0.0.0 --port 8888 --no-browser --allow-root
 ```
