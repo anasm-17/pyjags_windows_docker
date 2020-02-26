@@ -13,7 +13,7 @@ docker pull anasm17/pyjags_windows
 ```
 docker run --rm -it -v ${PWD}/project:/usr/src/project/ -p 8899:8888 anasm17/pyjags_windows
 ```
-**Linux:**
+**Linux/MacOS:**
 ```
 docker run --rm -it -v /$(pwd)/project:/usr/src/project/ -p 8899:8888 anasm17/pyjags_windows
 ```
