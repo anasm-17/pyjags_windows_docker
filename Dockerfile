@@ -41,3 +41,12 @@ RUN conda install -c anaconda docopt -y
 RUN conda install -c anaconda requests -y
 RUN conda install -c conda-forge pytest -y
 RUN conda install -c conda-forge altair vega_datasets -y
+
+# Install dependencies for altair plots
+RUN apt-get update && apt install -y chromium-browser && apt-get install -y libnss3 && apt-get install unzip
+
+RUN wget -q "https://chromedriver.storage.googleapis.com/79.0.3945.36/chromedriver_linux64.zip" -O /tmp/chromedriver.zip \
+    && unzip /tmp/chromedriver.zip -d /usr/bin/ \
+    && rm /tmp/chromedriver.zip && chown root:root /usr/bin/chromedriver && chmod +x /usr/bin/chromedriver
+
+RUN conda install selenium -y
