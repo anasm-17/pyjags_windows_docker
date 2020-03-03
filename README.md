@@ -4,18 +4,18 @@ Docker container for pyjags for windows users having difficulties installing pyj
 ## Usage
 1. Pull docker image: 
 ```
-docker pull anasm17/pyjags_windows
+docker pull anasm17/pyjags_windows:latest
 ```
 
 2. Place project directories or files under the project folder and run the following command in the root directory of the project:
 
 **Windows:**
 ```
-docker run --rm -it -v ${PWD}/project:/usr/src/project/ -p 8899:8888 anasm17/pyjags_windows
+docker run --rm -it -v ${PWD}/project:/usr/src/project/ -p 8899:8888 anasm17/pyjags_windows:latest
 ```
 **Linux/MacOS:**
 ```
-docker run --rm -it -v /$(pwd)/project:/usr/src/project/ -p 8899:8888 anasm17/pyjags_windows
+docker run --rm -it -v /$(pwd)/project:/usr/src/project/ -p 8899:8888 anasm17/pyjags_windows:latest
 ```
 *Note:- 8899 can be another number, just make sure it is consistent with step 5.*
 
