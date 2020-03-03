@@ -1,6 +1,9 @@
 # pyjags_windows
 Docker container for pyjags for windows users having difficulties installing pyjags. I do not own pyjags or any of the packages in this docker build, this is merely a repo to help my peers get pyjags running on their machines.
 
+#### Docker Link - [pyjags_windows](https://hub.docker.com/repository/docker/anasm17/pyjags_windows/general)
+#### GitHub Link - [pyjags_windows_docker](https://github.com/anasm-17/pyjags_windows_docker)
+
 ## Usage
 1. Pull docker image: 
 ```
