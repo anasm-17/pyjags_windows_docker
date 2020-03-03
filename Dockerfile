@@ -37,3 +37,4 @@ RUN conda install -c anaconda docopt -y
 RUN conda install -c anaconda requests -y
 RUN conda install -c conda-forge pytest -y
 RUN conda install -c conda-forge altair vega_datasets -y
+RUN conda install -c conda-forge ipywidgets -y
